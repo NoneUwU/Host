@@ -108,7 +108,7 @@ client.on('message', async(message) => {
                         muterole = await message.guild.roles.create({
                             data: {
                               name: 'mute',
-                              color: 'GREEN',
+                              color: '#ff0000',
                               permissions: []
                             },
                             reason: 'Role de muteado',
