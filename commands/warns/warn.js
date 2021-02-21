@@ -1,5 +1,6 @@
 const db = require('../../models/warns')
 const { Message, MessageEmbed } = require('discord.js')
+const Discord = require('discord.js')
 
 module.exports = {
     name :'warn',
@@ -33,10 +34,17 @@ module.exports = {
             }
             data.save()
         });
-        user.send(new MessageEmbed()
-            .setDescription(`Has sido warned por: **${reason}**`)
-            .setColor("RED")
-        )
+        
+        const priven = new Discord.MessageEmbed()
+        .setDescription(`Has sido warned por: **${reason}**`)
+        .setColor("RED")
+
+        try {
+            await user.send(priven);
+        } catch (err) {
+
+        }
+        
         message.channel.send(new MessageEmbed()
             .setDescription(`Warned **${user}** Por **${reason}**`)
             .setColor('BLUE')
