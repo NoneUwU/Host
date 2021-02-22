@@ -158,6 +158,7 @@ client.on('guildMemberAdd', guildMember =>{
     let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'ESTUDIANTES');
 
     guildMember.roles.add(welcomeRole);
+    guildMember.guild.channels.cache.get('776126537514745889').send(`Welcome <@${guildMember.user.id}> to our server! Make sure to check out the rules channel!`)
 });
 
 client.login(token)
