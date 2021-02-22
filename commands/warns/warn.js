@@ -8,6 +8,7 @@ module.exports = {
      * @param {Message} message
      */
     run : async(client, message, args) => {
+        if(!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send('No tienes permisos para usar este comando.')
         const user = message.mentions.members.first() || message.guild.members.cache.get(args[0])
         if(!user) return message.channel.send('Usuario invalido.')
         const reason = args.slice(1).join(" ")
