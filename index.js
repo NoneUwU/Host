@@ -153,4 +153,11 @@ client.on('message', async(message) => {
         });
     }
 })
+
+client.on('guildMemberAdd', guildMember =>{
+    let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'ESTUDIANTES');
+
+    guildMember.roles.add(welcomeRole);
+});
+
 client.login(token)
