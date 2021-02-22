@@ -153,15 +153,4 @@ client.on('message', async(message) => {
         });
     }
 })
-
-client.on('guildMemberAdd', member => {
-    member.roles.add(member.guild.roles.cache.find(i => i.name === 'ESTUDIANTES'))
-
-    const welcomeEmbed = new Discord.MessageEmbed()
-    .setColor('#5cf000')
-    .setTitle('**' + member.user.username + '** Se a unido, y Somos **' + member.guild.memberCount + '**')
-
-    member.guild.channels.cache.find(i => i.name === '𝑮𝑬𝑵𝑬𝑹𝑨𝑳👻').send(welcomeEmbed)
-})
-
 client.login(token)
