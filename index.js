@@ -76,7 +76,7 @@ client.on('messageReactionRemove', async(reaction, user) => {
 
 const usersMap = new Map();
 const LIMIT = 6;
-const TIME = 60000;
+const TIME = 600000;
 const DIFF = 3000;
 
 client.on('message', async(message) => {
