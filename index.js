@@ -130,7 +130,7 @@ client.on('message', async(message) => {
                     })
                 });
                 message.member.roles.add(muterole);
-                message.channel.send('Muteado');
+                message.channel.send('Muteado por: `10 **Minutos**`');
                 setTimeout(() => {
                     message.member.roles.remove(muterole);
                     message.channel.send('Desmuteado!')
