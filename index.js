@@ -28,11 +28,10 @@ client.categories = fs.readdirSync("./commands/");
  * @param {Client} client
  */
 client.on('ready', () => {
-    client.user.setPresence({
-        activity: { 
-          name: `${prefix}help`,
-          type: 'STREAMING'
-        }, 
+    client.user.setActivity("with depression", {
+  type: "STREAMING",
+  url: "https://www.twitch.tv/monstercat"
+});
         status: 'online' 
       })
     console.log(`${client.user.username} ✅`)
