@@ -29,12 +29,13 @@ client.categories = fs.readdirSync("./commands/");
  */
 client.on('ready', () => {
     client.user.setPresence({
-        activity: { 
-          name: `${prefix}help`,
-          type: 'STREAMING'
-        }, 
-        status: 'dnd'
-      })
+        status: 'online',
+        activity: {
+            name: `${prefix}help`,
+            type: 'STREAMING',
+            url: 'https://www.twitch.tv/elnoneuwu'
+        }
+    })
     console.log(`${client.user.username} ✅`)
 })
 client.on('message', async message =>{
