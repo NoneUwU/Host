@@ -31,9 +31,9 @@ client.on('ready', () => {
     client.user.setPresence({
         activity: { 
           name: `${prefix}help`,
-          type: 'PAJEANDOME'
+          type: 'STREAMING'
         }, 
-        status: 'dnd' 
+        status: 'idle' 
       })
     console.log(`${client.user.username} ✅`)
 })
