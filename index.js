@@ -31,7 +31,7 @@ client.on('ready', () => {
     client.user.setPresence({
         activity: { 
           name: `${prefix}help`,
-          type: 'PLAYING'
+          type: 'STREAMING'
         }, 
         status: 'dnd' 
       })
