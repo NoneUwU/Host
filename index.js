@@ -33,7 +33,7 @@ client.on('ready', () => {
           name: `${prefix}help`,
           type: 'STREAMING'
         }, 
-        status: 'online'
+        status: 'dnd'
       })
     console.log(`${client.user.username} ✅`)
 })
