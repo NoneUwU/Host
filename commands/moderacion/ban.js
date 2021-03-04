@@ -5,8 +5,8 @@ module.exports  = {
     name: "ban",
     aliases : ['b'],
     description: "banear a un usuario.",
-    run : async(client, message, args) => {if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("No tienes permiso para usar este comando")
-
+    run : async(client, message, args) => {
+        if (!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("No tienes permiso para usar este comando")
     const mentionMember = message.mentions.members.first();
     let reason = args.slice(1).join(" ");
     if (!reason) reason = "Sin razon dada";
