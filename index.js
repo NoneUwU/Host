@@ -103,12 +103,12 @@ client.on('message', async(message) => {
         else {
             ++msgCount;
             if(parseInt(msgCount) === LIMIT) {
-                let muterole = message.guild.roles.cache.find(role => role.name === 'mute');
+                let muterole = message.guild.roles.cache.find(role => role.name === 'Mute-');
                 if(!muterole) {
                     try{
                         muterole = await message.guild.roles.create({
                             data: {
-                              name: 'mute',
+                              name: 'Mute-',
                               color: '#ff0000',
                               permissions: []
                             },
