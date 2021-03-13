@@ -11,9 +11,10 @@
   "license": "ISC",
   "dependencies": {
     "ascii-table": "0.0.9",
-    "discord.js": "^12.2.0",
+    "discord.js": "^12.5.1",
     "moment": "^2.29.1",
     "mongoose": "^5.11.15",
+    "node.js": "0.0.1-security",
     "target": "0.0.2"
   }
 }
