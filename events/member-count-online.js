@@ -25,5 +25,5 @@ client.on('ready',() => {
                 
             });
         });
-    }, ms('5 second'));
+    }, ms('15 minutes'));
 })
