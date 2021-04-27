@@ -20,7 +20,7 @@ client.on('ready',() => {
                     try {
                         channel1.setName(`Miembros Online: ${onlineMember}`);
                     } catch (err) {
-                        cosole.log(err)
+                        console.log(err)
                     }
 
                     value.MemberOnline = onlineMember;
