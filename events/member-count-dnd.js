@@ -20,7 +20,7 @@ client.on('ready',() => {
                     try {
                         channel3.setName(`Miembros No Molestar: ${dndMember}`);
                     } catch (err) {
-                        cosole.log(err)
+                        console.log(err)
                     }
                     channel3.setName(`Miembros No Molestar: ${dndMember}`);
 
