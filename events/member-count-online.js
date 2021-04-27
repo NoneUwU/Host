@@ -17,7 +17,11 @@ client.on('ready',() => {
                 if (value.MemberOnline != onlineMember) {
                     console.log('The member online count Differs');
                     const channel1 = guild.channels.cache.get(value.ChannelOn);
-                    channel1.setName(`Miembros Online: ${onlineMember}`);
+                    try {
+                        channel1.setName(`Miembros Online: ${onlineMember}`);
+                    } catch (err) {
+                        cosole.log(err)
+                    }
 
                     value.MemberOnline = onlineMember;
                     value.save();
