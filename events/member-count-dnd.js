@@ -17,6 +17,11 @@ client.on('ready',() => {
                 if (value.MemberNoMolestar != dndMember) {
                     console.log('The member online count Differs');
                     const channel3 = guild.channels.cache.get(value.ChannelNo);
+                    try {
+                        channel3.setName(`Miembros No Molestar: ${dndMember}`);
+                    } catch (err) {
+                        cosole.log(err)
+                    }
                     channel3.setName(`Miembros No Molestar: ${dndMember}`);
 
                     value.MemberNoMolestar = dndMember;
