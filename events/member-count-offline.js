@@ -20,7 +20,7 @@ client.on('ready',() => {
                     try {
                         channel4.setName(`Miembros Offline: ${offlineMember}`);
                     } catch (err) {
-                        cosole.log(err)
+                        console.log(err)
                     }
 
                     value.MemberOffline = offlineMember;
