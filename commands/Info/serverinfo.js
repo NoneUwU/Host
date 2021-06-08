@@ -54,7 +54,7 @@ module.exports  = {
 				`**❯ ID:** ${message.guild.id}`,
 				`**❯ Owner:** ${message.guild.owner.user.tag} (${message.guild.ownerID})`,
 				`**❯ Region:** ${regions[message.guild.region]}`,
-				`**❯ Nivel de Bosst:** ${message.guild.premiumTier ? `Tier ${message.guild.premiumTier}` : 'None'}`,
+				`**❯ Nivel de Bost:** ${message.guild.premiumTier ? `Tier ${message.guild.premiumTier}` : 'None'}`,
 				`**❯ Filtro de Expicidad:** ${filterLevels[message.guild.explicitContentFilter]}`,
 				`**❯ Nivel de Verificacion:** ${verificationLevels[message.guild.verificationLevel]}`,
 				`**❯ creado:** ${moment(message.guild.createdTimestamp).format('LT')} ${moment(message.guild.createdTimestamp).format('LL')} ${moment(message.guild.createdTimestamp).fromNow()}`,
